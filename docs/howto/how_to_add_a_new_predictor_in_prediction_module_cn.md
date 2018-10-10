@@ -6,7 +6,7 @@
 
 1. 定义一个继承基类 `Predictor` 的类
 2. 实现新类 `NewPredictor`
-3. 在 `prediction_conf.proto`中添加一个新的预测期类型
+3. 在 `prediction_conf.proto`中添加一个新的预测器类型
 4. 更新 prediction_conf
 5. 更新预测器管理器（Predictor manager）
 
@@ -54,7 +54,7 @@ NewPredictor::Predict(Obstacle* obstacle)() {
 
 ```
 
-### 在 `prediction_conf.proto`中添加一个新的预测期类型
+### 在 `prediction_conf.proto`中添加一个新的预测器类型
 ```
   enum PredictorType {
     LANE_SEQUENCE_PREDICTOR = 0;
